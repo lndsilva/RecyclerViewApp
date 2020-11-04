@@ -16,7 +16,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder> {
     //Variável global do tipo Lista que irá receber os filmes adicionados;
     private List<Filmes> listaFilmes;
 
-    //Construtor que recebe por parâmetro os filmes adicionados;
+     //Construtor que recebe por parâmetro os filmes adicionados;
     public Adapter(List<Filmes> lista) {
         this.listaFilmes = lista;
     }

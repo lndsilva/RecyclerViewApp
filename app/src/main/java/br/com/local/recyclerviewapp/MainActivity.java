@@ -14,10 +14,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
-    //Declarando o RecyclerView e uma lista para carregar os objetos no modelo
+    //Declarando o RecyclerView
     private RecyclerView recyclerView;
+    //Declarando a variável do tipo ArrayList para carregar os filmes
     private List<Filmes> listarFilmes = new ArrayList<>();
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+
     public void criarFilmes() {
         //Criando a instância do objeto Filmes
         Filmes filmes = new Filmes("A bela e a fera", "Aventura", "1990");
@@ -80,6 +81,8 @@ public class MainActivity extends AppCompatActivity {
         filmes = new Filmes("Intocáveis", "Comédia", "2012");
         this.listarFilmes.add(filmes);
         filmes = new Filmes("Alladim", "Aventura", "2019");
+        this.listarFilmes.add(filmes);
+        filmes = new Filmes("Aves de Rapina", "Ação", "2020");
         this.listarFilmes.add(filmes);
 
     }
